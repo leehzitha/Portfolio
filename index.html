@@ -6,37 +6,39 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header class="w-full h-[6rem] flex justify-center  items-center p-5 shadow-sm shadow-red-200">
+<body class="scroll-smooth [scroll-behavior:smooth]" >
+    <header class="w-full h-[6rem] flex justify-center fixed top-0 left-0 items-center p-5 shadow-sm bg-white/80 backdrop-blur-md shadow-red-200">
         <div class="flex gap-5 font-mono text-center">
-            <a href="" class="border-b-2 border-red-200">PORTFOLIO</a>
-            <a href="">ABOUT</a>
+            <a href="" class="">ABOUT</a>
+            <a href="#Projects" >PORTFOLIO</a>
             <a href="">SKILLS</a>
         </div>
     </header>
+    <!-- <div class="relative w-full flex mt-[6rem] flex-col items-center items-end px-70 gap-20">
+        <img src="star.png" class="op-10 left-10 text-red-200 w-20 select-none pointer-events-none"  alt="">
+    </div> -->
 
-    <div class="w-full mt-6 font-mono flex flex-col gap-10">
-
+    <div class="w-full mt-[6rem] font-mono flex flex-col gap-10" id="About">
         <!-- Conteúdo -->
-        <div class="w-full flex flex-col items-center : gap-20">
+       <div class="w-full flex flex-col items-center gap-20" >
             <div class="flex flex-col md:flex-row items-center gap-10 mb-30 mt-10">
 
                 <!-- Foto -->
                 <div class="w-60 h-60 md:w-100 md:h-100 bg-red-200 rounded-2xl">
-                     <img src="eu.jpg" class="rounded-2xl">
+                     <img src="eu.jpg" class="rounded-2xl hover:rotate-6">
                 </div>
 
                 <!-- Texto -->
                 <div class="flex flex-col text-center md:text-left">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col" >
                         <p class="text-black/50 mb-1">★ AVAILABLE FOR PROJECTS</p>
                         <p class="text-sm md:text-base text-black/50 mb-5">
                             - FULL STACK DEVELOPER
                         </p>
-                        <p class="text-2xl md:text-8xl font-bold">
+                        <p class="text-5xl md:text-8xl font-bold">
                             LETÍCIA
                         </p>
-                        <p class="text-2xl md:text-8xl border-b-[.3rem] border-red-200 font-bold">
+                        <p class="text-5xl md:text-8xl border-b-[.3rem] pb-5 border-red-200 font-bold">
                             BURLINSKI
                         </p>
 
@@ -47,13 +49,34 @@
                     <p class="text-sm md:text-base">
                         * Digital Solutions Apprentice @ BOSCH
                     </p>
-
+                    <p class="text-sm md:text-base"  id="Projects">
+                        * Experience with data cleaning & process automation @ CARE     
+                    </p>
                 </div>
 
             </div>
 
-            <div class="flex flex-col mt-10 w-full p-20 bg-red-200">
-                <p class="md:text-center md:text-8xl font-mono font-bold">PROJECTS</p>
+            <p class="md:text-center md:text-7xl font-mono text-5xl font-bold">PROJECTS</p>
+            <div class="flex flex-col mt-10 w-[85%] p-20 rounded-3xl md:flex-row justify-between  transition hover:scale-105  duration-300 bg-red-300">
+                <div>
+                    <p class="text-md md:text-6xl mb-3 font-bold">
+                            REST API
+                        </p>
+                    <p class="text-md md:text-xl text-white">
+                            ★ TypeScript - React
+                    </p>
+                </div>
+                <p class="text-md md:text-base ">
+                        An REST API developed 
+                    </p>
+            </div>
+            <div class="flex flex-col mt-10 w-[95%] rounded-2xl p-20 bg-red-200">
+                <div>
+                    <p class="text-md md:text-4xl">
+                            REST API
+                    </p>
+
+                </div>
             </div>
         </div>
 
